@@ -8,6 +8,8 @@ window.addEventListener('DOMContentLoaded', async () => {
                 throw new Error(`Response status: ${response.status}`);
             }
 
+            document.getElementById("parent").innerHTML = "";
+
             const jsonData = await response.json();
             console.log(jsonData);
             jsonData.record.projects.forEach(project => {
@@ -20,6 +22,11 @@ window.addEventListener('DOMContentLoaded', async () => {
                 window.projectItem.setAttribute("data-header", project.title);
                 window.projectItem.setAttribute("data-hyperlink", project.link);
 
+                window.dsc = document.createElement("p");
+                window.dsc.setAttribute("class", "description");
+                window.dsc.textContent = project.description;   
+                window.projectItem.appendChild(window.dsc);
+
                 console.log(window.projectItem);
                 document.getElementById("parent").appendChild(window.projectItem);
             });
@@ -29,14 +36,22 @@ window.addEventListener('DOMContentLoaded', async () => {
         }
     })
 
+    // Data to be stored in localStorage
     const data = {
         "projects": [
           {
             "title": "Triton UAS - Local Version",
-            "description": "As a software lead for Triton UAS, I designed and programmed autonomous flight systems. The pipeline takes in a <code>BBox[][]</code> and <code>cv Mat[]</code> which represents the image and telemetry of the plane. The program then converts the BBox into image-based coordinates, performing transformations that allow the coordinate of the object to be calculated.",
+            "description": "Competion aircraft; OBC (Onboard Computer) programmed in C++ and handles autonomous state management.",
             "link": "https://github.com/tritonuas/obcpp",
             "image_default": "https://www.dropbox.com/scl/fi/1kfao5wzgrs35ze6lqx8u/toothless.jpg?rlkey=47xz9x625a6cpzvabngji5gr1&st=k6luylrp&dl=1",
             "image_alt": "https://www.dropbox.com/scl/fi/67z9q4ru3o3da4jazb8n0/toothless_small.png?rlkey=62e5kdcuk92cwghkqe01pgew2&st=ersefhk6&dl=1"
+          },
+          {
+            "title": "Istari UAV",
+            "description": "A lightweight, PLA printed aircraft optimized for low-cost iterations of client aircraft models.",
+            "link": "https://github.com/tritonuas/gcs",
+            "image_default": "https://www.dropbox.com/scl/fi/xgqa20zdurp9858uwe7iy/istari.jpg?rlkey=ini98i401blkr4pxg0ms2ca0i&st=vp005ktn&dl=1",
+            "image_alt": "https://www.dropbox.com/scl/fi/xgqa20zdurp9858uwe7iy/istari.jpg?rlkey=ini98i401blkr4pxg0ms2ca0i&st=vp005ktn&dl=1"
           }
         ]
       };
@@ -44,6 +59,8 @@ window.addEventListener('DOMContentLoaded', async () => {
     localStorage.setItem('projectsData', JSON.stringify(data));
     
     document.getElementById("local").addEventListener('click', async () => {
+        document.getElementById("parent").innerHTML = "";
+        
         const storedData = JSON.parse(localStorage.getItem('projectsData'));
         storedData.projects.forEach(project => {
             console.log(project);
@@ -54,6 +71,11 @@ window.addEventListener('DOMContentLoaded', async () => {
             window.projectItem.setAttribute("data-image-alt", project.image_alt);  
             window.projectItem.setAttribute("data-header", project.title);
             window.projectItem.setAttribute("data-hyperlink", project.link);
+
+            window.dsc = document.createElement("p");
+            window.dsc.setAttribute("class", "description");
+            window.dsc.textContent = project.description;
+            window.projectItem.appendChild(window.dsc);
 
             console.log(window.projectItem);
             document.getElementById("parent").appendChild(window.projectItem);
