@@ -62,6 +62,11 @@ footer nav {
     /* text-shadow: 1px 1px 1px #fff; */
 }
 
+.big {
+    width: auto;  
+    margin: 1rem;
+}
+
 .main_button:hover {
     background-color: white;
     transform: scale(1.1, 1.1)

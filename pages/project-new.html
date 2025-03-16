@@ -29,11 +29,12 @@
 
     <content-body>
         <h2>My Projects</h2>
+        <div class="buttons">
+            <button class="main_button big" id="local" name="local">Load Local</button>
+            <button class="main_button big" id="remote" name="remote">Load Remote</button>
+        </div>
+       
         <div id="parent">
-            <project-card></project-card>
-
-
-            
             <!-- Harcoded Version of Markup: -->
             <!-- <project-card data-header="Triton UAS" data-image-default="../images/toothless_small.png" data-image-alt="../images/istari.jpg">
                 <p class="description">As a software lead for Triton UAS, I designed and programmed autonomous flight systems.
@@ -69,6 +70,7 @@
 
     <script src="../scripts/theme.js"></script>
     <script src="../scripts/project-card.js "></script>
+    <script src="../scripts/dataloading.js "></script>
 
     <script>
       document.getElementsByClassName("slider")[0].style.display = "block";
