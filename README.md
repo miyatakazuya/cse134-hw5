@@ -19,4 +19,4 @@ Personal Website for CSE134B
 **JS Improvements:**
 - Created an additional new element `footer-nav`, which replaces the old footers in each page. This was done because the same exact html was repeated through each page, and I though creating a new html element would make editing the nav easier in the future, as well as remove repeated markup throughout the pages.
 - Created new `contact-form.js` to keep separation of concerns and add visual clarity to html file.
-- Removed instances of weak typing on form and project variables to prevent any implict type coercion. 
+- Reduced instances of weak typing on form and project variables to prevent any implict type coercion. 
