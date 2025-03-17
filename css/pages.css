@@ -16,8 +16,22 @@ header {
     }
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    margin-bottom: 1em;
+
+    
+    /* justify-content: center; */
+    /* display: flex; */
+    /* justify-content: end; */
+}
+
 content-body {
     margin: auto;
+    margin-top: 1rem;
     width: fit-content;
     display: flex;
     justify-content: space-evenly;

@@ -21,6 +21,7 @@ picture img {
     max-height: 300px;
     max-width: 400px;
     width:auto;
+    margin-right: 1rem;
 }
 
 @media (max-width: 700px) {

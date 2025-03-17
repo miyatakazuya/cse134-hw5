@@ -43,15 +43,15 @@ window.addEventListener('DOMContentLoaded', async () => {
             "title": "Triton UAS - Local Version",
             "description": "Competion aircraft; OBC (Onboard Computer) programmed in C++ and handles autonomous state management.",
             "link": "https://github.com/tritonuas/obcpp",
-            "image_default": "https://www.dropbox.com/scl/fi/1kfao5wzgrs35ze6lqx8u/toothless.jpg?rlkey=47xz9x625a6cpzvabngji5gr1&st=k6luylrp&dl=1",
-            "image_alt": "https://www.dropbox.com/scl/fi/67z9q4ru3o3da4jazb8n0/toothless_small.png?rlkey=62e5kdcuk92cwghkqe01pgew2&st=ersefhk6&dl=1"
+            "image_default": "https://www.dropbox.com/scl/fi/e32eakxg2clt5o1g4u7lq/toothless-compressed.jpg?rlkey=ine1xc2201mps1lbtvat8rbhx&st=0qig3pag&dl=1",
+            "image_alt": "https://www.dropbox.com/scl/fi/e32eakxg2clt5o1g4u7lq/toothless-compressed.jpg?rlkey=ine1xc2201mps1lbtvat8rbhx&st=0qig3pag&dl=1"
           },
           {
             "title": "Istari UAV",
             "description": "A lightweight, PLA printed aircraft optimized for low-cost iterations of client aircraft models.",
             "link": "https://github.com/tritonuas/gcs",
-            "image_default": "https://www.dropbox.com/scl/fi/xgqa20zdurp9858uwe7iy/istari.jpg?rlkey=ini98i401blkr4pxg0ms2ca0i&st=vp005ktn&dl=1",
-            "image_alt": "https://www.dropbox.com/scl/fi/xgqa20zdurp9858uwe7iy/istari.jpg?rlkey=ini98i401blkr4pxg0ms2ca0i&st=vp005ktn&dl=1"
+            "image_default": "https://www.dropbox.com/scl/fi/gzzyrfkkwrzq6ruhi6jp8/istari-compressed.jpg?rlkey=fapkc7jwkpvp3owctihdq79my&st=u5s3bjw5&dl=1",
+            "image_alt": "https://www.dropbox.com/scl/fi/gzzyrfkkwrzq6ruhi6jp8/istari-compressed.jpg?rlkey=fapkc7jwkpvp3owctihdq79my&st=u5s3bjw5&dl=1"
           }
         ]
       };
