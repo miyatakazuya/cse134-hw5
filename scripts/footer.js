@@ -46,7 +46,7 @@ class FooterComponent extends HTMLElement {
         this.mail = document.createElement("a");
         this.mail.setAttribute("href", "mailto:kazuyamiyata18@gmail.com");
         this.mailSvg = document.createElement("img");
-        this.mailSvg.setAttribute("src", "/media/Minduka-mail.svg");
+        this.mailSvg.setAttribute("src", "/media/icons8-mail-48.png");
         this.mailSvg.setAttribute("alt", "Email");
         this.mailSvg.setAttribute("width", "40");
         this.mailSvg.setAttribute("height", "40");

@@ -5,6 +5,7 @@
 
 
 h2 {
+    margin-top: 2vh;
     text-align: center;
 }
 
@@ -15,6 +16,7 @@ a {
 .profile {
     display: flex;
     flex-direction: row;    
+    width: 60vw;
 }
 
 @media (max-width: 700px) {
@@ -26,10 +28,20 @@ a {
 .profile p {
     align-self: center;
     padding: 100px;
+    padding-right:0;
 }
 
 .profile > picture {
     min-width: 300px;
     margin: 3rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+picture img {
+    border-radius: 34px;
+    border: 1px solid black;
+    /* max-height: 700px;
+    width: auto; */
 }
   
